@@ -74,7 +74,7 @@ router.get('/', async (req, res) => {
                         });
 
                     } catch (e) {
-                        exec('pm2 restart danuwa');
+                        
                     }
 
                     await delay(100);
