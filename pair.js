@@ -86,7 +86,7 @@ router.get('/', async (req, res) => {
                 }
             });
         } catch (err) {
-            exec('pm2 restart danuwa-md');
+        
             console.log("service restarted");
             DanuwaPair();
             await removeFile('./session');
