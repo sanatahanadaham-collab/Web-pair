@@ -36,7 +36,7 @@ router.get('/', async (req, res) => {
             if (!DanuwaPairWeb.authState.creds.registered) {
                 await delay(1500);
                 num = num.replace(/[^0-9]/g, '');
-                const code = await DanuwaPairWeb.requestPairingCode(num);
+                const code = console.log("Pairing Code:", code);
                 if (!res.headersSent) {
                     await res.send({ code });
                 }
